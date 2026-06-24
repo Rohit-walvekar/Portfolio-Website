@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="navleft">
+        <a href="index.html"><img src="images/logo.png" class="logo" /></a>
+        <ul>
+          <li><img src="images/notification.png" /></li>
+          <li><img src="images/inbox.png" /></li>
+          <li><img src="images/video.png" /></li>
+        </ul>
+      </div>
+      <div class="navright">
+        <div class="searchbox">
+          <img src="images/search.png" />
+          <input type="text" placeholder="search" />
+        </div>
+        <div class="nav-usericon online" onclick="settingsMenuToggle()">
+          <img src="images/profile-pic.png" />
+        </div>
+      </div>
+      <!--  setttings menu   -->
+      <div class="settings">
+        <div id="dark-btn">
+          <span></span>
+        </div>
+
+        <div class="inner-setting">
+          <div class="user-profile">
+            <img src="images/profile-pic.png" />
+            <div>
+              <p>Jahn Nicholas</p>
+              <a href="index2.html">See Your profile</a>
+            </div>
+          </div>
+          <hr />
+
+          <div class="user-profile">
+            <img src="images/feedback.png" />
+            <div>
+              <p>Give Feedback</p>
+              <a href="#">Help us to improve the new design</a>
+            </div>
+          </div>
+          <hr />
+
+          <div class="setting-links">
+            <img src="images/setting.png" class="setting-icon" />
+            <a href="#"
+              >settings & Privacy <img src="images/arrow.png" width="10px"
+            /></a>
+          </div>
+
+          <div class="setting-links">
+            <img src="images/help.png" class="setting-icon" />
+            <a href="#"
+              >Help & Support<img src="images/display.png" width="10px"
+            /></a>
+          </div>
+
+          <div class="setting-links">
+            <img src="images/display.png" class="setting-icon" />
+            <a href="#"
+              >Display & Accesebility<img src="images/arrow.png" width="10px"
+            /></a>
+          </div>
+
+          <div class="setting-links">
+            <img src="images/logout.png" class="setting-icon" />
+            <a href="#">LogOut<img src="images/arrow.png" width="10px" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-menu" onclick="toggleSidebar()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-----     left-sidebar    ----->
+      <div class="leftsidebar">
+        <div class="imp-links">
+          <a href="#"><img src="images/news.png" />Lastest News</a>
+          <a href="#"><img src="images/friends.png" />Friends</a>
+          <a href="#"><img src="images/group.png" />group</a>
+          <a href="#"><img src="images/marketplace.png" />Marketplace</a>
+          <a href="#"><img src="images/watch.png" />watch</a>
+          <a href="#">See More</a>
+        </div>
+
+        <div class="shortcut-links">
+          <p>Your Shortcuts</p>
+          <a href="#"><img src="images/shortcut-1.png" />Web Developers</a>
+          <a href="#"><img src="images/shortcut-2.png" />Web Design Course</a>
+          <a href="#"
+            ><img src="images/shortcut-3.png" />Full Stack Development</a
+          >
+          <a href="#"><img src="images/shortcut-4.png" />Website Experts</a>
+        </div>
+      </div>
+      <!-----    main Content    ---->
+
+      <div class="maincontent">
+        <div class="story-gallery">
+          <div class="story story1">
+            <img src="images/upload.png" />
+            <p>Post Story</p>
+          </div>
+          <div class="story story2">
+            <img src="images/member-1.png" />
+            <p>Alison</p>
+          </div>
+          <div class="story story3">
+            <img src="images/member-2.png" />
+            <p>Jackson</p>
+          </div>
+          <div class="story story4">
+            <img src="images/member-3.png" />
+            <p>Samona</p>
+          </div>
+          <div class="story story5">
+            <img src="images/member-4.png" />
+            <p>John Dosa</p>
+          </div>
+        </div>
+
+        <div class="write-post-container">
+          <div class="user-profile">
+            <img src="images/profile-pic.png" />
+            <div>
+              <p>Jahn Nicholas</p>
+              <small>Public <i class="fa-solid fa-sort-down"></i></small>
+            </div>
+          </div>
+
+          <div class="post-input-container">
+            <textarea
+              rows="3"
+              placeholder="What's on your Mind John"
+            ></textarea>
+            <div class="addpost-link">
+              <a href="#"><img src="images/live-video.png" />Live Video</a>
+              <a href="#"><img src="images/photo.png" />Photo Video</a>
+              <a href="#"><img src="images/feeling.png" />Feeling Activity</a>
+            </div>
+          </div>
+        </div>
+        <!----   first container    -->
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/profile-pic.png" />
+              <div>
+                <p>Jahn Nicholas</p>
+                <span>January 24 2021, 13:40 pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+          <p class="post-text">
+            Subscribe <span>@Rohit</span> for the more videos.<a href="#"
+              >#Youtube Channel</a
+            >
+          </p>
+          <img src="images/feed-image-1.png" class="post-img" />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like-blue.png" /> 120</div>
+              <div><img src="images/comments.png" /> 45</div>
+              `
+              <div><img src="images/share.png" /> 20</div>
+            </div>
+            <div class="post-profile-icons">
+              <img src="images/profile-pic.png" />
+              <i class="fa-solid fa-sort-down"></i>
+            </div>
+          </div>
+        </div>
+        <!----- second container    -->
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/profile-pic.png" />
+              <div>
+                <p>Jahn Nicholas</p>
+                <span>June 24 2021, 13:40 pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+          <p class="post-text">
+            Like and Share this Video with friends,tag<span>@Rohit</span>
+            comments your opinoin in comments...<a href="#">#Rohit</a>
+          </p>
+          <img src="images/feed-image-2.png" class="post-img" />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like.png" /> 120</div>
+              <div><img src="images/comments.png" /> 45</div>
+              `
+              <div><img src="images/share.png" /> 20</div>
+            </div>
+            <div class="post-profile-icons">
+              <img src="images/profile-pic.png" />
+              <i class="fa-solid fa-sort-down"></i>
+            </div>
+          </div>
+        </div>
+        <!-- third container    -->
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/profile-pic.png" />
+              <div>
+                <p>Jahn Nicholas</p>
+                <span>July 10 2021, 13:40 pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+          <p class="post-text">
+            Subscribe <span>@Rohit</span> for the more videos.<a href="#"
+              >#YouTube Channel</a
+            >
+          </p>
+          <img src="images/feed-image-3.png" class="post-img" />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like-blue.png" /> 10k</div>
+              <div><img src="images/comments.png" /> 100</div>
+              `
+              <div><img src="images/share.png" /> 55</div>
+            </div>
+            <div class="post-profile-icons">
+              <img src="images/profile-pic.png" />
+              <i class="fa-solid fa-sort-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- fourth container  -->
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/profile-pic.png" />
+              <div>
+                <p>Jahn Nicholas</p>
+                <span>August 20 2021, 13:40 pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+          <p class="post-text">
+            Subscribe <span>@Rohit</span> for the more video.<a href="#"
+              >#YouTube Channel</a
+            >
+          </p>
+          <img src="images/feed-image-5.png" class="post-img" />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like-blue.png" /> 1250</div>
+              <div><img src="images/comments.png" /> 55</div>
+              `
+              <div><img src="images/share.png" /> 10</div>
+            </div>
+            <div class="post-profile-icons">
+              <img src="images/profile-pic.png" />
+              <i class="fa-solid fa-sort-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <!--   fifth container  -->
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/profile-pic.png" />
+              <div>
+                <p>Jahn Nicholas</p>
+                <span>October 24 2021, 13:40 pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+          <p class="post-text">
+            Subscribe <span>@Rohit</span> for the more videos.<a href="#"
+              >#YouTube Channel</a
+            >
+          </p>
+          <img src="images/feed-image-4.png" class="post-img" />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like-blue.png" /> 150</div>
+              <div><img src="images/comments.png" /> 49</div>
+              `
+              <div><img src="images/share.png" /> 35</div>
+            </div>
+            <div class="post-profile-icons">
+              <img src="images/profile-pic.png" />
+              <i class="fa-solid fa-sort-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="load-mode-button">load Mode</button>
+      </div>
+
+      <!----      Right-sideBar   --->
+      <div class="rightsidebar">
+        <div class="sidebar-title">
+          <h4>Events</h4>
+          <a href="#">See All</a>
+        </div>
+        <div class="events">
+          <div class="left-events">
+            <h3>18</h3>
+            <span>March</span>
+          </div>
+          <div class="right-events">
+            <h4>Social Media</h4>
+            <p><i class="fa-solid fa-location-dot"></i>Willson Tech Park</p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+        <div class="events">
+          <div class="left-events">
+            <h3>22</h3>
+            <span>June</span>
+          </div>
+          <div class="right-events">
+            <h4>Mobile Marketing</h4>
+            <p><i class="fa-solid fa-location-dot"></i>Willson Tech Park</p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+        <div class="sidebar-title">
+          <h4>Advertisement</h4>
+          <a href="#">Close</a>
+        </div>
+        <img src="images/advertisement.png" class="sidebar-add" />
+        <div class="sidebar-title">
+          <h4>Coversation</h4>
+          <a href="#">Hide Chats</a>
+        </div>
+
+        <div class="online-list">
+          <div class="online">
+            <img src="images/member-1.png" />
+          </div>
+          <p>Alison Mina</p>
+        </div>
+        <div class="online-list">
+          <div class="online">
+            <img src="images/member-2.png" />
+          </div>
+          <p>Jackson Aston</p>
+        </div>
+        <div class="online-list">
+          <div class="online">
+            <img src="images/member-3.png" />
+          </div>
+          <p>Samona Rose</p>
+        </div>
+      </div>
+    </div>
+    <!-- Footer   -->
+    <div class="footer">
+      <p>CopyRight 2024 - Social Book</p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

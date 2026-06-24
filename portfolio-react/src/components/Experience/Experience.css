@@ -1,0 +1,62 @@
+/* ── EXPERIENCE / TIMELINE ── */
+.timeline { max-width: 750px; position: relative; margin-top: 2rem; }
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 6px; bottom: 0;
+  width: 1px;
+  background: var(--border);
+}
+
+.timeline-item { padding-left: 2.2rem; margin-bottom: 3.5rem; position: relative; }
+
+.timeline-dot {
+  position: absolute; left: -4px; top: 8px;
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  background: var(--muted);
+  border: 2px solid var(--bg);
+  transition: background 0.2s;
+}
+
+.timeline-item:hover .timeline-dot {
+  background: var(--white);
+}
+
+.timeline-date {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.timeline-role {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 0.2rem;
+}
+
+.timeline-org {
+  font-size: 0.9rem;
+  color: var(--text);
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.timeline-bullets { list-style: none; }
+.timeline-bullets li {
+  color: var(--text);
+  font-size: 0.95rem;
+  padding: 0.25rem 0 0.25rem 1.4rem;
+  position: relative;
+  line-height: 1.6;
+}
+.timeline-bullets li::before {
+  content: '—';
+  position: absolute; left: 0;
+  color: var(--muted);
+  font-weight: 400;
+  font-size: 0.85rem;
+}
