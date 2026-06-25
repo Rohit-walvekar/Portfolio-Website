@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import "./Hero.css";
 
 export default function Hero() {
@@ -31,15 +33,19 @@ export default function Hero() {
               href="https://github.com/Rohit-walvekar"
               className="btn-outline"
               target="_blank"
+              rel="noreferrer"
+              style={{ display: "flex", alignItems: "center", gap: "8px" }}
             >
-              GitHub
+              <FontAwesomeIcon icon={faGithub} size="1.5x" /> GitHub
             </a>
             <a
               href="https://www.linkedin.com/in/rohit-walvekar/"
               className="btn-outline"
               target="_blank"
+              rel="noreferrer"
+              style={{ display: "flex", alignItems: "center", gap: "8px" }}
             >
-              LinkedIn
+              <FontAwesomeIcon icon={faLinkedin} size="1.5x" /> LinkedIn
             </a>
           </div>
         </div>

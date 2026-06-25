@@ -1,20 +1,23 @@
 import { useState, useEffect } from 'react'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
-import Hero from './components/Hero/Hero'
-import About from './components/About/About'
-import Experience from './components/Experience/Experience'
-import Skills from './components/Skills/Skills'
-import Projects from './components/Projects/Projects'
-import Education from './components/Education/Education'
-import Contact from './components/Contact/Contact'
+import Home from './pages/Home'
+import BackendDetails from './pages/BackendDetails'
+import MoreProjects from './pages/MoreProjects'
 import './App.css'
 
 function App() {
   const [theme, setTheme] = useState('light')
+  const location = useLocation()
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)
   }, [theme])
+
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   const toggleTheme = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark')
@@ -24,13 +27,11 @@ function App() {
     <>
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Experience />
-        <Education />
-        <Contact />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/backend-details" element={<BackendDetails />} />
+          <Route path="/more-projects" element={<MoreProjects />} />
+        </Routes>
       </main>
     </>
   )

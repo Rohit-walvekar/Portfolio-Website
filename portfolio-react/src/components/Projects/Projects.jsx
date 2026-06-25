@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useScrollReveal } from "../../hooks/useScrollReveal";
 import "./Projects.css";
 
@@ -103,11 +104,16 @@ export default function Projects() {
                 >
                   GitHub Repo
                 </a>
-                {/* <a href={project.demo} target="_blank" rel="noreferrer" className="btn-primary">Live Demo</a> */}
               </div>
             </div>
           </div>
         ))}
+      </div>
+
+      <div style={{ textAlign: "center", marginTop: "40px" }}>
+        <Link to="/more-projects" className="btn-primary" style={{ display: "inline-block", textDecoration: "none" }}>
+          More Projects
+        </Link>
       </div>
     </section>
   );

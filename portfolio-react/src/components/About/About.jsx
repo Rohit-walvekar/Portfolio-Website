@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useScrollReveal } from "../../hooks/useScrollReveal";
 import "./About.css";
 
@@ -6,12 +7,14 @@ const SERVICES = [
     title: "Frontend Development",
     desc: "Building responsive, accessible, and fast web interfaces using React, JavaScript, HTML, and CSS.",
     btnLabel: "View Projects",
+    href: "#projects",
     isPrimary: true,
   },
   {
     title: "Backend Engineering",
     desc: "Creating robust RESTful APIs and managing data with Node.js, Express, PHP, and MongoDB/MySQL.",
     btnLabel: "Read More",
+    linkTo: "/backend-details",
     isPrimary: false,
   },
 ];
@@ -89,11 +92,29 @@ export default function About() {
               <h3 className="service-title">{srv.title}</h3>
               <p className="service-desc">{srv.desc}</p>
               <div className="service-footer">
-                <button
-                  className={`service-btn ${srv.isPrimary ? "btn-solid" : "btn-ghost"}`}
-                >
-                  {srv.btnLabel}
-                </button>
+                {srv.href ? (
+                  <a
+                    href={srv.href}
+                    className={`service-btn ${srv.isPrimary ? "btn-solid" : "btn-ghost"}`}
+                    style={{ display: "inline-block", textDecoration: "none", textAlign: "center" }}
+                  >
+                    {srv.btnLabel}
+                  </a>
+                ) : srv.linkTo ? (
+                  <Link
+                    to={srv.linkTo}
+                    className={`service-btn ${srv.isPrimary ? "btn-solid" : "btn-ghost"}`}
+                    style={{ display: "inline-block", textDecoration: "none", textAlign: "center" }}
+                  >
+                    {srv.btnLabel}
+                  </Link>
+                ) : (
+                  <button
+                    className={`service-btn ${srv.isPrimary ? "btn-solid" : "btn-ghost"}`}
+                  >
+                    {srv.btnLabel}
+                  </button>
+                )}
                 <div className="service-line"></div>
               </div>
             </div>
