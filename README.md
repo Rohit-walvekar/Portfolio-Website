@@ -214,7 +214,5 @@ Passionate about building responsive, interactive, and user-friendly web applica
 
 If you like this project, don't forget to star the repository!
 
-## Live Link : https://6a400d1becd2f7e7db30e3f4--portfolio-rohitwalvekar.netlify.app/
-
 ```
 ```
