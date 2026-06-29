@@ -96,7 +96,7 @@ portfolio-react/
 ## Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/portfolio-react.git
+git clone https://github.com/Rohit-walvekar/portfolio-react.git
 ````
 
 ## Navigate to Project
