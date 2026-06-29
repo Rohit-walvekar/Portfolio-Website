@@ -1,17 +1,10 @@
 ```markdown
 # Rohit Walvekar - Developer Portfolio
 
-<p align="center">
-  <img src="https://img.shields.io/badge/React-Frontend-blue?logo=react" />
-  <img src="https://img.shields.io/badge/JavaScript-ES6-yellow?logo=javascript" />
-  <img src="https://img.shields.io/badge/Tailwind-CSS-38B2AC?logo=tailwindcss" />
-  <img src="https://img.shields.io/badge/Responsive-Design-success" />
-</p>
-
 ## Live Demo
 
 **Portfolio:**  
-https://6a400d1becd2f7e7db30e3f4--portfolio-rohitwalvekar.netlify.app/
+https://6a41eb8a710174f910038367--portfolio-rohitwalvekar.netlify.app/
 
 ---
 
